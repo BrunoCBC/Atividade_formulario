@@ -1,0 +1,120 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(100,149,237,1) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+section{
+    background-color: rgba(240, 248, 255, 0.5);
+    
+    flex-direction: column;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+    
+
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+form{
+    flex-direction: column;
+    display: flex;
+    
+    padding: 20px;
+    gap: 20px;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue; 
+    padding: 10px;
+    gap: 10px;
+    border-color: rgba(9,9,121,1);
+}
+
+form fieldset legend{
+    background-color: rgba(9,9,121,1);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(9,9,121,1);
+}
+
+.dados-pessoais div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dados-pessoais div input{
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: blue;
+    padding: 5px;
+}
+
+.dados-pessoais div input::placeholder{
+    color:blue;
+}
+
+input[type="text"]{
+    border: 1px solid yellow;
+}
+
+input[type="text"] focus{
+    outline: 2px solid;
+    border: none;
+}
+
+.dados-profissionais, .mod-trabalho, .mensagem, .experiencia{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-botoes input{
+    border: none;
+}
+
+.form-botoes input[type="reset"]{
+    border: 3px solid rgba(9,9,121,1);
+    background-color: rgba(9,9,121,1);
+    color: aquamarine;
+    font-weight: bold;
+}
+
+.form-botoes input[type="reset"]:hover{
+    background-color: aquamarine;
+    color: rgba(9,9,121,1);
+}
+
+.form-botoes input[type="submit"]{
+    border: 3px solid rgba(9,9,121,1);
+    background-color: rgba(9,9,121,1);
+    color: aqua;
+    font-weight: bold;
+}
+
+.form-botoes input[type="submit"]:hover{
+    background-color: aqua;
+    color: rgba(9,9,121,1);
+}
